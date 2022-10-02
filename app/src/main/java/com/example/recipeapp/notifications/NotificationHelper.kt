@@ -14,7 +14,7 @@ import androidx.core.app.NotificationCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import com.example.recipeapp.MainActivity
+import com.example.recipeapp.main.MainActivity
 import com.example.recipeapp.R
 
 

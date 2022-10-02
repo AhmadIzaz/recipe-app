@@ -2,8 +2,8 @@ package com.example.recipeapp.di
 
 import android.content.Context
 import com.example.recipeapp.BuildConfig
-import com.example.recipeapp.MainRepositoryImpl
-import com.example.recipeapp.MainViewModel
+import com.example.recipeapp.main.MainRepositoryImpl
+import com.example.recipeapp.main.MainViewModel
 import com.example.recipeapp.common.CoroutineContextProvider
 import com.example.recipeapp.common.DateTimeConverters
 import com.example.recipeapp.common.SharePrefHelper

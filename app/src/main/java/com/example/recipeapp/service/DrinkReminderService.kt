@@ -4,7 +4,7 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-import com.example.recipeapp.MainViewModel
+import com.example.recipeapp.main.MainViewModel
 import com.example.recipeapp.R
 import com.example.recipeapp.notifications.AlarmManagerHelper
 import com.example.recipeapp.notifications.NotificationHelper

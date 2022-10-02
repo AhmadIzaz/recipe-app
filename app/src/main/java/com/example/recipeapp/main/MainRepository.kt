@@ -1,6 +1,5 @@
-package com.example.recipeapp
+package com.example.recipeapp.main
 
-import androidx.lifecycle.LiveData
 import com.example.recipeapp.feature.recipes.presentation.model.Recipe
 import com.example.recipeapp.room.RecipeDatabase
 

@@ -1,8 +1,9 @@
-package com.example.recipeapp
+package com.example.recipeapp.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.recipeapp.R
 import com.example.recipeapp.databinding.ActivityMainBinding
 import com.example.recipeapp.feature.favouriterecipe.ui.FavouriteRecipeFragment
 import com.example.recipeapp.feature.recipes.ui.RecipesFragment

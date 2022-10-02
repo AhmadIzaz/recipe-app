@@ -1,4 +1,4 @@
-package com.example.recipeapp
+package com.example.recipeapp.main
 
 import com.example.recipeapp.bases.BaseViewModel
 import com.example.recipeapp.feature.recipes.presentation.model.Recipe
