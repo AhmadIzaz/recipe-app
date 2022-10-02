@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Practices/sofit/app/src/main/res/drawable/bottom_nav_home_icon_state.xml" value="0.1715" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/drawable/bottom_nav_item_icon.xml" value="0.165" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/drawable/bottom_nav_star_icon_state.xml" value="0.165" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/drawable/ic_star.xml" value="0.1715" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/drawable/search_bg.xml" value="0.1715" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/favourite_drink_notif_layout.xml" value="0.6" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/fragment_favourite_recipe.xml" value="0.20208333333333334" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/fragment_recipes.xml" value="0.264" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/layout_loading_indicator.xml" value="0.21927083333333333" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/layout/recipe_item_layout.xml" value="0.1" />
+        <entry key="..\:/Practices/sofit/app/src/main/res/menu/navigation.xml" value="0.21927083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

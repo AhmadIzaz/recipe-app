@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_favourite">Favourite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="by_name">By Name</string>
+    <string name="by_first_alphabet">By First Alphabet</string>
+    <string name="search_drink">Search Drink</string>
+    <string name="no_items_available">No items available for your search</string>
+    <string name="can_not_leave_empty_field">Can not leave empty field</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="drinks_recipes">Drink Recipes</string>
+    <string name="favourites_recipes">Favourite Recipes</string>
+    <string name="feeling_thirsty">Feeling Thirsty ?</string>
+    <string name="need_some_drink">Need some drink. Open app now</string>
+</resources>

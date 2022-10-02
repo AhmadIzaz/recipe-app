@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="navigation_home">Home</string>
+    <string name="navigation_favourite">Favourite</string>
+    <string name="no_items_available">No items available for your search</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="drinks_recipes">Drink Recipes</string>
+    <string name="favourites_recipes">Favourite Recipes</string>
+    <string name="feeling_thirsty">Feeling Thirsty ?</string>
+    <string name="need_some_drink">Need some drink. Open app now</string>
+</resources>

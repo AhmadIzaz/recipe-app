@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/bottom_nav_home_icon_state"
+            android:title="@string/navigation_home"
+            app:showAsAction="ifRoom" />
+
+
+        <item
+            android:id="@+id/navigation_favourite"
+            android:icon="@drawable/bottom_nav_star_icon_state"
+            android:title="@string/navigation_favourite"
+            app:showAsAction="ifRoom" />
+
+
+    </group>
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/drink_thumbnail_imageview"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/drink_thumbnail_imageview"
+        app:layout_constraintEnd_toStartOf="@id/favourite_imageView"
+        app:layout_constraintStart_toEndOf="@+id/drink_thumbnail_imageview"
+        app:layout_constraintTop_toTopOf="@+id/drink_thumbnail_imageview">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            tools:text="Margrita Glass" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/details_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Margrita" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favourite_imageView"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/ic_star_border"
+        android:tint="@color/gold"
+        app:layout_constraintBottom_toBottomOf="@id/drink_thumbnail_imageview"
+        app:layout_constraintEnd_toStartOf="@+id/alcoholic_checkbox_layout"
+        app:layout_constraintTop_toTopOf="@id/drink_thumbnail_imageview" />
+
+    <LinearLayout
+        android:id="@+id/alcoholic_checkbox_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/drink_thumbnail_imageview">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alcohol" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/alcoholic_checkbox"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
