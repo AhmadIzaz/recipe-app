@@ -17,10 +17,6 @@ class MainActivity : AppCompatActivity() {
     private val binding get() = _binding!!
 
 
-    /*private val mainViewModel by inject<MainViewModel>()
-    private val notificationHelper by inject<NotificationHelper>()
-    private val alarmManagerHelper by inject<AlarmManagerHelper>()*/
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
@@ -55,29 +51,4 @@ class MainActivity : AppCompatActivity() {
             .replace(binding.fragmentContainer.id, fragment, fragment.javaClass.simpleName).commit()
     }
 
-    /*@Subscribe(threadMode = ThreadMode.MAIN)
-    fun onDrinkReminderEvent(event: DrinkReminderEvent) {
-        Log.d("RECIPEAPP", "unauthorized triggered")
-        if (event.rescheduleAlarm) {
-//            alarmManagerHelper.scheduleSecondAlarm()
-        }
-        if (event.notifyUser) {
-            val _recipes = mainViewModel.getFavouriteRecipe()*//*.observe(this) { _recipes ->*//*
-            Log.d("RECIPEAPP", "$_recipes")
-            if (_recipes.isNullOrEmpty()) {
-                notificationHelper.showNotification(
-                    getString(R.string.feeling_thirsty),
-                    getString(R.string.need_some_drink),
-                    ""
-                )
-            } else {
-                val _recipe = _recipes[0]
-                notificationHelper.showNotification(
-                    _recipe.name.toString(),
-                    _recipe.details.toString(),
-                    _recipe.thumbnail.toString()
-                )
-            }
-        }
-    }*/
 }

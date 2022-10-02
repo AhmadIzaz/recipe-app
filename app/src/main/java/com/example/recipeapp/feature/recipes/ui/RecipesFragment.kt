@@ -59,7 +59,8 @@ class RecipesFragment : BaseFragment(), RecipeAdapter.OnClickListener {
     }
 
     private fun scheduleAlarm() {
-        alarmManagerHelper.scheduleAlarm()
+        if (alarmManagerHelper.isAlarmAlreadySet().not())
+            alarmManagerHelper.scheduleAlarm()
     }
 
     private fun setupViews() {

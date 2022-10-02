@@ -51,7 +51,7 @@ class AlarmManagerHelper(val context: Context) {
     }*/
 
     // Because we need the alarm at 2 PM
-    fun scheduleAlarm(hour: Int = 14, minutes: Int = 30, seconds: Int = 0) {
+    fun scheduleAlarm(hour: Int = 23, minutes: Int = 30, seconds: Int = 0) {
         if (!hasPermission) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 context.startActivity(Intent(ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
@@ -69,21 +69,33 @@ class AlarmManagerHelper(val context: Context) {
             cal.set(Calendar.MILLISECOND, 0)
 
             alarmManager.setAlarmClock(
-                AlarmManager.AlarmClockInfo(cal.timeInMillis, createExactAlarmIntent()),
-                createExactAlarmIntent()
+                AlarmManager.AlarmClockInfo(cal.timeInMillis, createExactAlarmPendingIntent()),
+                createExactAlarmPendingIntent()
             )
 
             Log.d("RECIPEAPP", "Scheduling the alarm")
         }
     }
 
-    private fun createExactAlarmIntent(): PendingIntent {
-        val intent = Intent(context, DrinkReminderBroadCastReceiver::class.java)
+    private fun createExactAlarmPendingIntent(): PendingIntent {
         return PendingIntent.getBroadcast(
             context,
             ALARM_REQUEST_CODE,
-            intent,
+            createExactAlarmIntent(),
             PendingIntent.FLAG_IMMUTABLE
         )
+    }
+
+    private fun createExactAlarmIntent(): Intent {
+        return Intent(context, DrinkReminderBroadCastReceiver::class.java)
+    }
+
+    fun isAlarmAlreadySet(): Boolean {
+        return (PendingIntent.getBroadcast(
+            context,
+            ALARM_REQUEST_CODE,
+            createExactAlarmIntent(),
+            PendingIntent.FLAG_NO_CREATE or PendingIntent.FLAG_IMMUTABLE
+        ) != null)
     }
 }
