@@ -29,29 +29,8 @@ class AlarmManagerHelper(val context: Context) {
         }
     }
 
-    /*fun scheduleAlarm() {
-        if (!hasPermission) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                context.startActivity(Intent(ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
-            }
-        } else {
-            val cal = Calendar.getInstance();
-            cal.set(Calendar.HOUR_OF_DAY, 11)
-            cal.set(Calendar.MINUTE, 58)
-            cal.set(Calendar.SECOND, 0)
-            cal.set(Calendar.MILLISECOND, 0)
-
-            alarmManager.setAlarmClock(
-                AlarmManager.AlarmClockInfo(cal.timeInMillis, createExactAlarmIntent()),
-                createExactAlarmIntent()
-            )
-
-            Log.d("RECIPEAPP", "Scheduling the alarm")
-        }
-    }*/
-
     // Because we need the alarm at 2 PM
-    fun scheduleAlarm(hour: Int = 23, minutes: Int = 30, seconds: Int = 0) {
+    fun scheduleAlarm(hour: Int = 14, minutes: Int = 0, seconds: Int = 0) {
         if (!hasPermission) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 context.startActivity(Intent(ACTION_REQUEST_SCHEDULE_EXACT_ALARM))

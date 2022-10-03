@@ -82,11 +82,7 @@ fun <R> ApiResult<R>.onFailureWithErrorResponse(block: (ErrorResponse) -> Unit) 
             val errorCode = response?.code() ?: 0
             block(ErrorResponse(errorCode, errorMessage, errorMessage))
         }
-    } /*else {
-        response?.errorResponse().notNull {
-            block(it)
-        }
-    }*/
+    }
 }
 
 fun BaseViewModel.ioJob(block: suspend CoroutineScope.() -> Unit): Job {
